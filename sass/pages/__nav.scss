@@ -1,0 +1,170 @@
+.header{
+    height: 16vh;
+    background-color: white;
+    font-size: 1.5rem;
+   
+&__bars{
+color: black;
+font-size: 5rem;
+cursor: pointer;
+position: absolute;
+top: 50px;
+left: 50px;
+transform: translateY(-50%);
+transition: all 0.5s ;
+display: none;
+border: 2px solid $defualt-color;
+@include respond(tab-port){
+    display: block;
+}
+
+}
+    
+    &__logo-box{
+        float: left;
+        align-items: center;
+        
+        @include respond(tab-port){
+            width: 100% !important;
+        text-align: center;
+        }
+    }
+    &__logo{
+     width: 20rem;
+     height: 8rem;   
+     margin-left: 50px;
+     @include respond(tab-port){
+        
+    height: 15rem;
+    }
+    }
+
+    &__list{
+    
+        list-style: none;
+        float: right;
+        margin-right: 10px;
+        padding: 2px 5px;
+
+        @include respond(tab-port){
+            display: none;
+            width: 100% !important;
+            margin-right: 0;
+            padding:0 ;
+        }
+         
+        
+    }
+    &__item{
+        display: inline-block;
+        line-height: 50px;
+        
+        &:not(:last-child){
+            margin-right: 1.5rem;
+        }
+
+        @include respond(tab-port){
+            width: 100%;
+        background-color:black;
+        margin-right: 0;
+        display: block;
+        }
+    }
+    &__link{
+        &:link,
+        &:visited{
+           
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            padding: 0 5px;
+            font-weight: bold;
+            letter-spacing: .2rem;
+            color: $heading-font-color;
+
+         
+        }
+        &:hover,
+        &:active{
+            color: $defualt-color;
+            border-top: 2px solid $defualt-color;
+            border-bottom: 2px solid $defualt-color;
+    
+        }
+    }
+}
+
+.menu__down{
+
+    position: absolute;
+    width: 100%;
+    left:-100%;
+    background-color: $color-white;
+    border-top: 4px solid $defualt-color;
+    box-shadow: 0 0 3px #000;
+
+    z-index: 1;
+
+
+    @include respond(tab-port){
+        position: relative;
+        box-shadow: none;
+        display: none;
+    }
+}
+.drop-menu:hover .menu__down{
+left:0;
+
+@include respond(tab-port){
+    display: block;
+    width: 70%;
+}
+}
+
+
+
+
+
+// drop down style
+
+.dropdown__list{
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;  
+
+    
+}
+.dropdown__item{
+    padding: 0;
+    display: block;
+    text-align: center;
+
+    @include respond(tab-port){
+        text-align: left;
+        
+    }
+   
+}
+.dropdown__link{
+    
+    &:link,
+    &:visited{
+        text-decoration: none;
+        color: $heading-font-color;
+        font-size: 1.3rem;
+      
+    }
+    
+
+    &:hover,
+    &:active{
+        display: inline-block;
+        border-bottom: 1px solid $defualt-color;
+    }
+}
+
+
+.header__bars.rotate{
+transform: translateY(-50%) rotate(-180deg);
+}

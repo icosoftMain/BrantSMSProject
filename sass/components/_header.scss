@@ -1,0 +1,111 @@
+
+
+// .display{
+//     background-color:rgb(247, 247, 243) ;
+
+//    &__container{
+//        display: flex;
+//        background-color: transparent;
+//        height: 50vh;
+//        backface-visibility: hidden;
+       
+//     }
+//     &__content{
+//    flex: 1;
+
+  
+// }
+
+
+// }
+
+// .text_content{
+//   margin-left: -10rem;
+//  background-color: black;
+//  padding-top: 5.5rem;
+
+// animation: moveInleft 3s ease-out;
+// animation-delay: 1s;
+
+// text-align: center;
+
+// }
+
+// .imageHolder{
+//    background-color: blue;
+//    margin: 3.5rem 0;
+//    animation: moveInRight 3s ease-out; 
+//    animation-delay: 1s;
+
+//    &__image{
+//        width: 40rem;
+//        height: 25rem;
+//    }
+// }
+// .display_btn{
+//    &:not(:last-child){
+//       margin-right: 2rem;
+//    }
+// }
+
+.display{
+   background-color:rgb(247, 247, 243) ;
+
+   &__container{
+      width: 100%;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      backface-visibility: hidden;
+
+      @include respond(tab-port){
+         flex-direction: column;
+      }
+      
+   }
+   &__content1{
+     
+      animation: moveInleft 3s ease-out;
+      animation-delay: 1s;
+      margin: 5rem auto;
+      padding: 5rem;
+      text-align: center;
+      @include respond(tab-port){
+        
+         width: 100%;
+         padding: 5rem 1rem;
+      }
+      
+   }
+   &__content2{
+      margin-top: 2rem;
+      margin-right: 10rem;
+      animation: moveInRight 3s ease-out; 
+   animation-delay: 1s;
+
+   @include respond(tab-port){
+      width: 100%;
+      margin-right: 0rem;
+      margin-top: 0;
+      text-align: center;
+   }
+   }
+   &__image{
+      width: 45rem;
+      height: 30rem;
+      
+      @include respond(tab-port ){
+        
+         width: 320px;
+         height: 280px;
+      }
+     
+   }
+   &-btn{
+      &:not(:last-child){
+              margin-right: 2rem;
+      }
+   }
+}
+

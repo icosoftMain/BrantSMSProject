@@ -1,0 +1,37 @@
+/*
+primary color
+defualt font color
+btn color
+header color
+main content color
+sub content color
+footer color
+footer font color
+color dark
+color white
+*/
+@import "abstracts/variables";
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "base/base";
+@import "base/animatios";
+@import "base/typography";
+@import "base/utilies";
+
+@import "components/button";    
+@import "components/header";
+@import "components/feature-box";
+@import "layouts/grid";
+@import "pages/home";
+@import "pages/_nav";
+@import "pages/foter";
+
+
+
+
+
+
+
+ 
+ 
+ 

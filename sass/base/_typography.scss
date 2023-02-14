@@ -1,0 +1,55 @@
+.heading{
+&__primary{ 
+    color: $heading-font-color ;
+    margin-bottom: 2.5rem;
+
+    
+    
+    &--main{
+        text-transform: capitalize;
+        font-size: 3rem;
+        font-weight: 600;
+        display: block;
+        letter-spacing: .1rem;
+
+        
+        
+       
+        
+     }
+    
+    &--sub{
+        text-transform: lowercase;
+        font-size: 2.5rem;
+         font-weight: 400;
+          letter-spacing: .5px;
+          margin-left: .25rem;
+        display: block;
+
+       }
+    
+     }
+
+     &__secondery{
+       font-size: 2.5rem;
+       font-weight: 600;
+       color: $heading-font-color ;
+     }
+     &__tertiary{
+      font-size: 2.2rem;
+      font-weight: 300;
+      color: $heading-font-color ;
+      text-transform: capitalize;
+      margin-bottom: 1.2rem;
+    }
+    }
+    .paragraph{
+      font-size: 16px;
+      color: rgb(48, 48, 48);
+      font-weight: 500;
+
+      @include respond(tab-port){
+        font-size: 15px;    
+         
+      }
+    }

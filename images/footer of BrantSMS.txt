@@ -1,0 +1,10 @@
+icon     Business                Developers                Company             Careers
+         Products                Get Started               About Us            Carrers in brantSMS 
+         Blog                    API reference             News & Press
+         Downloads                                         Offices
+         FAQ                                               Contact
+
+
+
+
+Copyright @Date        License Agreements and Service Terms     Legal Notice and Privacy Policy   Marketplace Agreements     Disclaimer
